@@ -9,3 +9,8 @@ test('greets by name', () => {
 test('greets the world by default', () => {
   assert.strictEqual(greet(), 'Hello, world!');
 });
+
+test('subtracts two numbers', () => {
+  const { subtract } = require('../src/index');
+  assert.strictEqual(subtract(5, 3), 2);
+});
